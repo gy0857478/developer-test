@@ -24,8 +24,8 @@ As the System User I would like to see active user’s personal data in a table 
 - A button named “Reset Balance” that sets all of users balances to zero and reflects this in the view.
 
 ## Restrictions
-- Must use AngularJS
-- Responsive grid (using a 3rd party framework is acceptable)
-- No restrictions on ECMAScript standards (whatever you’re comfortable with).
+- Must use Angular (modern version such as 17)
+- Responsive grid - please use @ng-bootstrap
+- use `rxjs` or `Observable` when handling data and pair them with Angular's `async pipe` to simplify data subscription logic in templates. This enhances code readability, maintainability, and effectively handles asynchronous data streams.
 
 Please don’t spend more than a few hours on this as we're not looking for something polished but more your approach. If you'd like to publish it to GitHub we can pull this down from the office. Please also feel free to place the "users.json" as an object literal within your script.
