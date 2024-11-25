@@ -12,7 +12,7 @@ As the system user I would like to see active user's personal data in a table so
 A very simple backend project is included which contains all the data and data classes necessary to complete the API.
 
 ## Definition of Done
-- An API with two endpoints
+- An API with two endpoints. Please note the included `Backend.http` which has requests for both endpoints.
   1. `GET /api/users` - Get all users.
      - There is no need to support anything other than getting the full list of users
      - `UserDto` provides all necessary fields for the frontend. It should not need anything added or removed and paging support is NOT required
