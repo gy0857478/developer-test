@@ -14,11 +14,11 @@ A very simple backend project is included which contains all the data and data c
 ## Definition of Done
 - An API with two endpoints
   1. `GET /api/users` - Get all users.
-    - There is no need to support anything other than getting the full list.
-    - `UserDto` provides all necessary fields for the frontend. It should not need anything added or removed and paging support is NOT required
+     - There is no need to support anything other than getting the full list of users
+     - `UserDto` provides all necessary fields for the frontend. It should not need anything added or removed and paging support is NOT required
   2. `GET /api/icons/<iconname>` - Get a PNG icon by name
 - Implement both `IUserService` and `IIconService` to access data from `Data/Users` and `Data/Icons` respectively. Use these with the endpoints definited above.
-- `User` and `Friend` "entities" are for deserialisation of JSON files in `Data/Users` directory
+- `User` and `Friend` "entities" are for deserialisation of JSON files in `Data/Users` directory. These are to simulate a very rudimentary database.
 
 ## Restrictions
 - Minimal API is recomended over using controllers to save time in implementation. However, feel free to use controllers if you want to.
@@ -29,6 +29,7 @@ A very simple backend project is included which contains all the data and data c
 ## Definition of Done
 - A table bound to the data from the users API
   - Showing the following columns
+    - Icon from `/api/icons/<iconname>`
     - Name
     - Age
     - Registered Date, format `dd-mm-yyyy dd:mm:ss`
