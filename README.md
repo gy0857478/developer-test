@@ -1,23 +1,38 @@
-# developer-test
-Test for developer job candidates
+# SchoolsBuddy Developer Test
 
-# Front end
-
-Can you put together a technical example that you’d be happy to walk through with the Development Team. We’ve provided a sample set of data, attached "users.json", which we’d you to use in the following Story. 
+The SchoolsBuddy developer coding test asks the candidate to develop a simple C# API and Angular website for evaluation by the development team and discussion in their interview.
 
 ## Story
-As the System User I would like to see active user’s personal data in a table so that I may make management decisions. I would like to filter, order and search the data to help me make those decisions.  
+As the system user I would like to see active user's personal data in a table so that I may make management decisions. I would like to filter, order and search the data to help me make those decisions.
+
+# Backend
+
+There is a very simple backend project included that contains all the data and data classes necessary to complete the API.
 
 ## Definition of Done
-- A table bound to the data “user.json”
+- An API with two endpoints
+  1. `GET /api/users` - Get all users. There is no need to support anything other than getting the full list.
+    - `UserDto` provides all necessary fields for the frontend. It should not need anything added or removed.
+  2. `GET /api/icons/<iconname>` - Get a PNG icon by name
+- Implement both `IUserService` and `IIconService` to access data from `Data/Users` and `Data/Icons` respectively. Use these with the endpoints definited above.
+- Paging support is NOT required
+
+## Restrictions
+- Minimal API is recomended over using controllers to save time in implementation. However, feel free to use controllers if you really want to.
+- Use the included classes
+
+# Frontend
+
+## Definition of Done
+- A table bound to the data from the users API
   - Showing the following columns
     - Name
     - Age
-    - Registered Date, format dd-mm-yyyy dd:mm:ss
+    - Registered Date, format `dd-mm-yyyy dd:mm:ss`
     - Email
     - Balance, format currency as pounds to 2 decimal places
-  - Sorted by “Name” ascending by default
-  - We are not interested in paging
+  - Sorted by "Name" ascending by default
+  - Paging is NOT required
 
 - A "Search" input and label 
   - Typing in the search input filters the table results by “Name”
