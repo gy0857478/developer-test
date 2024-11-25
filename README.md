@@ -48,4 +48,4 @@ A very simple backend project is included which contains all the data and data c
 - Responsive grid (using a 3rd party framework is acceptable)
 - No restrictions on ECMAScript standards (whatever you’re comfortable with).
 
-Please do not spend more than a few hours on this as we're not looking for something polished but more your approach. If you'd like to publish it to GitHub we can pull this down from the office. Please also feel free to place the "users.json" as an object literal within your script.
+Please do not spend more than a few hours on this as we're not looking for something polished but more your approach and ability to turn the spec into functioning software. If you'd like to publish it to GitHub we can pull this down from the office.
