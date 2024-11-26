@@ -24,6 +24,7 @@ A very simple backend project is included which contains all the data and data c
 ## Restrictions
 - Minimal API is recomended over using controllers to save time in implementation. However, feel free to use controllers if you want to.
 - Use the included classes
+- Do not use a database. Fetching the JSON files from the filesystem is perfectly adequate
 
 # Frontend
 
