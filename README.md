@@ -25,6 +25,7 @@ A very simple backend project is included which contains all the data and data c
 - Minimal API is recomended over using controllers to save time in implementation. However, feel free to use controllers if you want to.
 - Use the included classes
 - Do not use a database. Fetching the JSON files from the filesystem is perfectly adequate
+- Use .NET 8 or later
 
 # Frontend
 
@@ -45,8 +46,8 @@ A very simple backend project is included which contains all the data and data c
 - A button named “Reset Balance” that sets all of users balances to zero and reflects this in the view.
 
 ## Restrictions
-- Must use AngularJS
-- Responsive grid (using a 3rd party framework is acceptable)
-- No restrictions on ECMAScript standards (whatever you’re comfortable with).
+- Must use Angular (17 or later)
+- Responsive grid - Please use `@ng-bootstrap`
+- Use of `rxjs` or `Observable` when handling data paired them with Angular's `async pipe` is encouraged
 
 Please do not spend more than a few hours on this as we're not looking for something polished but more your approach and ability to turn the spec into functioning software. If you'd like to publish it to GitHub we can pull this down from the office.
