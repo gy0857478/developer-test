@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="row mb-3">
+      <div class="col-12 col-md-6">
+        <label for="search" class="form-label">Search</label>
+        <input
+          id="search"
+          type="text"
+          class="form-control"
+          [(ngModel)]="searchTerm"
+          (input)="onSearch()"
+          placeholder="Search by name"
+        />
+      </div>
+      <div class="col-12 col-md-6 text-md-end">
+        <button class="btn btn-primary btn-lg mt-3 mt-md-0" (click)="resetBalances()">Reset Balance</button>
+      </div>
+    </div>
+  
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped table-hover">
+        <thead>
+          <tr>
+            <th>Icon</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Registered Date</th>
+            <th>Email</th>
+            <th>Balance</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of filteredUsers$ | async">
+            <td><img [src]="user.iconPath" alt="icon" class="img-fluid" width="32" height="32" /></td>
+            <td>{{ user.name }}</td>
+            <td>{{ user.age }}</td>
+            <td>{{ user.registered | date:'dd-MM-yyyy HH:mm:ss' }}</td>
+            <td>{{ user.email }}</td>
+            <td>{{ user.poundsBalance }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
